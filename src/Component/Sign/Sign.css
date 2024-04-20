@@ -1,0 +1,63 @@
+.full-height {
+    /* height: 62vh; */
+    /* border: 1px solid red; */
+    background: rgb(254, 201, 195);
+    background: linear-gradient(
+      0deg,
+      rgba(254, 201, 195, 1) 0%,
+      rgba(250, 242, 221, 1) 100%
+    );
+  }
+  
+
+  
+  .image-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-card {
+    height: 100%;
+  }
+  
+  .form-section .card-body {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: rgba(0, 0, 0, 0.201);
+    border: none;
+  }
+  
+  .image-container h2 {
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .login{
+    background-color: white;
+    border-radius: 3px;
+  }
+  
+  @media (max-width: 768px) {
+    .image-section {
+      display: none; /* Hide image section on smaller devices */
+    }
+  
+    .form-section {
+      width: 100%; /* Make form section full width on smaller devices */
+    }
+  
+    .form-section .card-body {
+      width: 90%; /* Adjust card body width for better alignment on smaller devices */
+    }
+  }
+  

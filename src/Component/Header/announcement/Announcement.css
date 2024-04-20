@@ -1,0 +1,16 @@
+/* Add your CSS styles for the announcement slider container here */
+.announcement-slider-container {
+    margin: 20px auto;
+    max-width: 1200px; /* Adjust maximum width as needed */
+  }
+#sliderp{
+    color: whitesmoke;
+    font-weight: 200;
+}  
+@media  screen and (max-width: "568px") {
+    #sliderep{
+        font-size: 9px;
+        font-weight: 100;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,76 @@
+.season {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 850px;
+  height: 600px; 
+  margin: 0 auto;
+  padding: 0; 
+    position: relative;
+  }
+  
+  .season img {
+    width: calc(50% - 0px);
+    margin: 0; 
+    padding: 0; 
+    height: 599px;
+    object-fit: cover;
+  }
+  .seasondiv{
+    position: absolute;
+    z-index: 4; 
+    text-align: center;
+    padding: 20px;
+    margin-top: -50px; 
+    bottom: 0;
+  }
+  /* .seasonimg2{
+    display: none;
+  } */
+  .seasondiv h3{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  .seasondiv a{
+    border: 2px solid rgb(20, 16, 16);
+    padding: 6px 12px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+  }
+  .seasondiv a:hover{
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .season img {
+      width: 98%; /* Images take up 100% of the container width on smaller screens */
+      margin: 0 5px;
+    }
+    .season img:nth-child(1) {
+      display: none; 
+    }
+    .season img:nth-child(2) {
+       max-width: 500px;
+    }
+    .seasondiv h6{
+      font-size: 10px;
+    }
+    .seasondiv a{
+      padding: 4px 6px;
+      font-size: 15px;
+    }
+    .imgbox{
+      margin-bottom: 10px;
+      border: 1px solid red;
+    }
+   
+  
+  }
+  
+  

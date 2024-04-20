@@ -1,0 +1,105 @@
+footer {
+    background-color: rgba(0, 0, 0, 0.785);
+    color: #ffffffd4;
+    padding: 20px;
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+}
+/* .fixed-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+} */
+
+
+  li{
+    list-style: none;
+  }
+  
+  .upper-section {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-bottom: 30px;
+    margin-top: 25px;
+    /* border: 2px solid red; */
+  }
+  
+  .upper-section .subsection {
+    flex: 1;
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+  
+  .subsection ul li a:hover{
+    text-decoration: underline;
+  }
+  
+  .subsection h4{
+    margin-left: 25px;
+  }
+  
+  .lower-section {
+    text-align: center;
+    /* border: 2px solid red; */
+  }
+  
+  .lowersub_sec2 {
+    margin-top: 15px;
+  }
+  
+  .lowersub_sec1 a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px; /* Add space between links */
+  }
+  
+  .lowersub_sec2 p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media only screen and (min-width: 768px) {
+    footer {
+      height: auto; /* Reset height for larger screens */
+    }
+  
+    .upper-section .subsection {
+      flex-basis: calc(25% - 20px); /* Adjust the width of subsections for larger screens */
+      margin-bottom: 0; /* Remove margin-bottom for larger screens */
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    footer {
+      height: auto; /* Reset height for smaller screens */
+    }
+  
+    .upper-section .subsection {
+      flex-basis: calc(50% - 20px); /* Adjust the width of subsections for smaller screens */
+    }
+    
+    .lowersub_sec {
+      flex-direction: column;
+    }
+    .subsection h4{
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 32px;
+    }
+    #ssf{
+        font-size: 10px;
+    }
+    .subsection ul li a{
+        font-size: 11px;
+    }
+    .lowersub_sec2 p{
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    .lowersub_sec1 a img {
+        width: 28px;
+        height: 28px;
+    }
+  }
